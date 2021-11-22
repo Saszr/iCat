@@ -1,8 +1,6 @@
 import iCat_Gist_Menus from './iCat-Gist';
 
 export default {
-  base:'/iCat/',
-  publicPath: './',
   mode: 'site',
   title: 'iCat',
   hash: true,
