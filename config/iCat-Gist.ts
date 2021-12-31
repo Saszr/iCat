@@ -1,6 +1,6 @@
 export default [
   {
     title: 'Dev',
-    children: ['AccountTabs', 'VirtualList'],
+    children: ['AccountTabs', 'VirtualList', 'Drawer','Popover'],
   },
 ];
