@@ -1,16 +1,23 @@
 import iCat_Gist_Menus from './iCat-Gist';
 import iCat_hooks_Menus from './iCat-hooks';
+import iCat_visualization_Menus from './iCat-visualization';
 
 export default {
   mode: 'site',
   title: 'iCat',
   hash: true,
   resolve: {
-    includes: ['docs', 'packages/iCat-Gist/src', 'packages/iCat-hooks/src'],
+    includes: [
+      'docs',
+      'packages/iCat-Gist/src',
+      'packages/iCat-hooks/src',
+      'packages/iCat-visualization/src',
+    ],
   },
   navs: [
     { title: 'iCat-Gist', path: '/iCat-Gist' },
     { title: 'iCat-hooks', path: '/iCat-hooks' },
+    { title: 'iCat-visualization', path: '/iCat-visualization' },
     { title: 'GitHub', path: 'https://github.com/Saszr/iCat' },
   ],
   menus: {
@@ -22,6 +29,7 @@ export default {
     ],
     '/iCat-Gist': iCat_Gist_Menus,
     '/iCat-hooks': iCat_hooks_Menus,
+    '/iCat-visualization': iCat_visualization_Menus,
   },
   extraBabelPlugins: [
     [
