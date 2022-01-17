@@ -1,20 +1,32 @@
 {
   "compilerOptions": {
-    "target": "ES5",
-    "moduleResolution": "node",
-    "jsx": "react",
-    "allowJs": true,
-    "esModuleInterop": true,
-    "downlevelIteration": true,
-    "sourceMap": true,
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    },
+    "baseUrl": "./",
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": false,
+    "skipLibCheck": false,
+    "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
-    "skipLibCheck": true,
-    "declaration": false,
-    "strictNullChecks": true
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react",
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules",
+        "options": {
+          "customMatcher": ".(styl|css|scss|less|sass)$"
+        }
+      }
+    ],
+    "paths": {
+      "@/*": ["./packages/*"]
+    }
   },
-  "exclude": ["node_modules", "lib", "es", "dist", "**/__tests__", "**/__test__", "**/demo"]
+  "include": ["./packages"]
 }
